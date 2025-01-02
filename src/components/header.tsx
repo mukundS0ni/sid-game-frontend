@@ -1,5 +1,6 @@
 'use client';
 import { useAuth, UserButton } from '@clerk/nextjs';
+import Link from 'next/link';
 import React from 'react';
 
 function Header() {
@@ -7,9 +8,9 @@ function Header() {
 
   return (
     <header className="flex justify-between items-center bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white h-20 p-4 font-extrabold shadow-lg">
-      <a href='/' className="text-2xl tracking-widest hover:scale-105 transform transition duration-300">
+      <Link href='/' className="text-2xl tracking-widest hover:scale-105 transform transition duration-300">
         Game APP
-      </a>
+      </Link>
       <div className="flex items-center text-white font-semibold rounded-full space-x-2transition duration-300 ease-in-out">
         {isSignedIn ? (
           <div className="flex items-center bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full space-x-2 transition duration-300 ease-in-out">
