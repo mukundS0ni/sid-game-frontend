@@ -73,7 +73,7 @@ function Gamepage() {
       setCurrentGame(currentGame + 1);
       setTimer2(300); // Reset timer for the next game
     } else {
-      alert("You have completed all the games!");
+      window.location.href = "/video";
       setCurrentGame(0); // Restart games or handle differently
       setTimer2(300);
     }
