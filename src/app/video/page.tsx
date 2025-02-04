@@ -7,7 +7,7 @@ function Videopage() {
       <div className='w-[80%] h-[80%]'>
       <video
         className="w-full h-full object-cover rounded-[20px]"
-        src="/ab2.mp4"
+        src="/ab.mp4"
         controls
       />
       </div>
